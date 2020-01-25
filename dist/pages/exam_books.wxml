@@ -1,0 +1,63 @@
+
+  <view class="books-container">
+    <view class="books-wrp" style="flex-direction:row;">
+      <view id="books_top_1" class="books-item books_top_item" style="border-color:{{pageCount==0?color1:color2}};border-width:{{pageCount==0?width1:width2}};" bindtap="titletap" data-wpytitletap-a="0">
+        章节练习
+        <view class="books-total">共 {{total}} 题</view>
+      </view>
+      <view id="top_2" class="books-item books_top_item" style="border-color:{{pageCount==1?color1:color2}};border-width:{{pageCount==1?width1:width2}};" bindtap="titletap" data-wpytitletap-a="1">考前模拟</view>
+      <view id="top_3" class="books-item books_top_item" style="border-color:{{pageCount==2?color1:color2}};border-width:{{pageCount==2?width1:width2}};" bindtap="titletap" data-wpytitletap-a="2">搜索</view>
+    </view>
+    <view  wx:if="{{pageCount==0}}">
+      
+  <view class="container">
+    <scroll-view id="book_scroll" scroll-y scroll-with-animation="scroll-with-animation">
+      <block wx:for="{{$child$bookList}}" wx:for-index="$child$index" wx:for-item="$child$item" wx:key="$child$item.b_id">
+        <view class="scroll-view-item" bindtap="$child$tap" data-wpytap-a="{{$child$item}}">
+          <view>{{$child$item.name}}</view>
+          <!-- <view class="flex-wrp" style="flex-direction:row;"> -->
+            <view class="book_type">{{$child$item.type}}</view>
+            <!-- <view class="book_total">{{item.total}}</view> -->
+          <!-- </view> -->
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+    </view>
+    <view  wx:if="{{pageCount==1}}">
+      
+  <view class="practice-container">
+    <view class="practice-card">敬请期待</view>
+  </view>
+
+    </view>
+    <view wx:if="{{pageCount==2}}">
+      
+  <view class="container">
+    <view>
+      <view class="search-section" style="flex-direction:row;">
+        <input value="{{$search$inputValue}}" class="search_input" type="text" placeholder="请输入关键字搜索" bindinput="$search$bindKeyInput" maxlength="20" confirm-type="search" auto-focus/>
+        <icon class="search-clear" type="clear" size="24" bindtap="$search$clear"/>
+        <view class="search-btn" bindtap="$search$tap">查询</view>
+      </view>
+    </view>
+    <view class="search-show">
+      <view  wx:if="{{$search$questions.length>0}}">
+        <block wx:for="{{$search$questions}}" wx:for-index="$search$index" wx:for-item="$search$item" wx:key="$search$index">
+          <view class="search-list">
+            <view>{{$search$item.type}}</view>
+            <view>{{$search$item.content}}</view>
+            <view wx:if="{{$search$item.list.length>0}}">
+              <block wx:for="{{$search$item.list}}" wx:for-index="$search$list_index" wx:for-item="$search$list_item" wx:key="$search$list_index">
+                <view>{{$search$list_item}}</view>
+              </block>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+
+    </view>
+  </view>

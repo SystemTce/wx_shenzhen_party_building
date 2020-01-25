@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/exam",
+    "pages/exam_books",
+    "pages/question",
+    "pages/info",
+    "pages/doc",
+    "pages/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WePY With TCB",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/exam",
+        "iconPath": "image/icon.png",
+        "selectedIconPath": "image/icon.png",
+        "text": "练习"
+      },
+      {
+        "pagePath": "pages/info",
+        "iconPath": "image/icon.png",
+        "selectedIconPath": "image/icon.png",
+        "text": "资讯"
+      },
+      {
+        "pagePath": "pages/doc",
+        "iconPath": "image/icon.png",
+        "selectedIconPath": "image/icon.png",
+        "text": "文档"
+      },
+      {
+        "pagePath": "pages/user",
+        "iconPath": "image/icon.png",
+        "selectedIconPath": "image/icon.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,14 @@
+
+  <view class="container">
+    <block wx:for="{{questions}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+      <view class="question_card">
+        <view>{{item.type}}</view>
+        <view>{{item.content}}</view>
+        <view  wx:if="{{item.list.length>0}}">
+          <block wx:for="{{item.list}}" wx:for-index="list_index" wx:for-item="list_item" wx:key="list_index">
+            <view>{{list_item}}</view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>

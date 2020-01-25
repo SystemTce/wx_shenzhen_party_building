@@ -1,0 +1,75 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.1",
+	"appid": "wxc47b973568faa8da",
+	"projectname": "miniprogram-test-1",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "exam",
+					"pathName": "pages/exam",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "exam_books",
+					"pathName": "pages/exam_books",
+					"query": "item={ \"exam_id\": \"exam_2019060901\",     \"title\": \"党建业务知识\",     \"content\": \"\",     \"start_date\": \"6月中旬\",     \"end_date\": \"6月中旬\", \"type\": \"闭卷考试/线下考试\",  \"range\": \"各基层党支部班子成员\" }",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "info",
+					"pathName": "pages/info",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "info",
+					"pathName": "pages/question",
+					"query": "item={     \"b_id\": \"b_0001\",     \"name\": \"01中国共产党基层组织选举工作暂行条例题库\",     \"type\": \"单选10\",     \"exam_id\": [         \"exam_2019060901\"     ],     \"path\": \"cloud://sz-party-building-6qcj9.737a-sz-party-building-6qcj9/doc/党建业务知识/01中国共产党基层组织选举工作暂行条例题库（单选10）.docx\" }",
+					"scene": null
+				}
+			]
+		}
+	}
+}

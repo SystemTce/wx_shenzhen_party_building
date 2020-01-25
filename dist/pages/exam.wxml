@@ -1,0 +1,16 @@
+
+  <view class="container">
+    <!-- <child v-bind:item.once="item" v-on:childFn="tap"></child> -->
+    <block class="block"  wx:if="{{examlist.length > 0}}">
+      
+  <block wx:for="{{$child$examlist}}" wx:for-index="$child$index" wx:for-item="$child$item" wx:key="$child${{$child$item.q_id}}">
+    <view class="child" bindtap="$child$tap" data-wpytap-a="{{$child$item}}">
+      <view class="title">{{$child$item.title}}</view>
+      <view class="range">{{$child$item.range}}</view>
+      <view class="line">{{$child$item.type}}</view>
+      <view class="line">时间：{{$child$item.start_date}}</view>
+    </view>
+  </block>
+
+    </block>
+  </view>

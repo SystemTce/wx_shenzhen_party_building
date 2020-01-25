@@ -1,0 +1,7 @@
+
+  <view class="container">
+      <button bindtap="getOpenID">getOpenID</button>
+      <button bindtap="createRecord">createRecord</button>
+      <button bindtap="uploadImage">uploadImage</button>
+      
+  </view>

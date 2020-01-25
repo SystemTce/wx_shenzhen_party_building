@@ -1,0 +1,4 @@
+@import "./../components/search.wxss";
+@import "./../components/practice.wxss";
+@import "./../components/bookchild.wxss";
+.books-wrp{display:flex}.books-item{width:33.33%;height:40px}.books_top_item{text-align:center;border-bottom:1rpx solid #d8d8d8}.books-total{font-size:12px;color:#aaa9a9}
